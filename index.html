@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <h1>Resume Builder</h1>
+        <form id="resumeForm" method="post" action="#">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="cvname">Resume URL</label>
+                <input type="text" id="cvname" required/> <br>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required> <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"required><br>
+                 
+                <label for="phone">Contact:</label>
+                <input type="tel" id="phone" name="phone"required><br>
+
+                <label for="profilePic">Profile Picture</label>
+                <input type="file" id="profilePic" name="profilePic" accept="image/*" required>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Education</legend>
+                <label for="education">Type your education</label>
+                <textarea id="education" name="education" rows="4" required></textarea><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Work Experience</legend>
+                <label for="experience">Type your experience</label>
+                <textarea id="experience" name="experience" rows="4" required></textarea><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skills">Type your skills</label>
+                <textarea id="skills" name="skills" rows="4" required></textarea><br> 
+            </fieldset>
+
+            <button type="submit">Generate Resume</button>
+            
+        </form>
+
+        <div id="resume_output"></div><br>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>Email: subha@gmail.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <ul class="social-links">
+                        <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/yourprofile" target="_blank">GitHub</a></li>
+                        <li><a href="https://twitter.com/yourprofile" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <p>&copy; 2024 Subha Ahmed. All rights reserved.</p>
+                </div>
+            </div>
+               
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
